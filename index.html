@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Treino de Academia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Treino de Academia</h1>
+        <p>Preencha os dados abaixo para gerar seu treino personalizado</p>
+        
+        <form id="form-treino">
+            <div class="form-group">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="objetivo">Seu Objetivo:</label>
+                <select id="objetivo" required>
+                    <option value="">Selecione...</option>
+                    <option value="musculacao">Musculação</option>
+                    <option value="emagrecimento">Emagrecimento</option>
+                    <option value="ganho-massa">Ganho de Massa Muscular</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="nivel">Nível de Experiência:</label>
+                <select id="nivel" required>
+                    <option value="">Selecione...</option>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                </select>
+            </div>
+            
+            <button type="submit">Gerar Treino</button>
+        </form>
+        
+        <div id="resultado" class="treino-container hidden">
+            <h2>Seu Treino Personalizado</h2>
+            <p id="saudacao"></p>
+            <div id="dias-treino"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
